@@ -6,14 +6,14 @@
  */
 void print_alphabet_x10(void)
 {
-	char letter;
-	int n;
+	char alp[26] = "abcdefghijklmnopqrstuvwxyz";
+	int n, m;
 
-	for (letter = 'a'; letter <= 'z'; letter++)
+	for (n = 0; n < 26; n++)
 	{
-		for (n = 0; n < 26; n++)
+		for (m = 0; m < 10; m++)
 		{
-			_putchar(letter);
+			_putchar(alp[n]);
 		}
 		_putchar('\n');
 	}
